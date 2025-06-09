@@ -4,55 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #fafafa;
-        font-family: Arial, sans-serif;
-      }
-      h1 {
-        color: darkslategray;
-        font-size: 50px;
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .container {
-        display: flex;
-        gap: 20px;
-        max-width: 900px;
-        width: 90%;
-        justify-content: center;
-      }
-      .cuadro {
-        flex: 1;
-        border: 2px solid #333;
-        padding: 20px;
-        box-sizing: border-box;
-        background-color: #f0f0f0;
-        border-radius: 8px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="Styles.css" />
   </head>
   <body>
-    <h1>Mis Proyectos</h1>
-    <div class="container">
-      <div class="cuadro">
-        <h2>Proyecto 3</h2>
-        <p>Descripción del proyecto 3.</p>
-      </div>
-      <div class="cuadro">
-        <h2>Proyecto 2</h2>
-        <p>Descripción del proyecto 2.</p>
-      </div>
-      <div class="cuadro">
-        <h2>Proyecto 1</h2>
-        <p>Descripción del proyecto 1.</p>
+    <nav>
+      <ul class="nav-links">
+        <li class="logo">Ricky-Santiago</li>
+        <li><a href="home.html">home</a></li>
+        <li><a href="Articles.html">Articles</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <h1>Mis Proyectos</h1>
+      <div class="container">
+        <div class="cuadro">
+          <h2>Proyecto 3</h2>
+          <p>Descripción del proyecto 3.</p>
+        </div>
+        <div class="cuadro">
+          <h2>Proyecto 2</h2>
+          <p>Descripción del proyecto 2.</p>
+        </div>
+        <div class="cuadro">
+          <h2>Proyecto 1</h2>
+          <p>Descripción del proyecto 1.</p>
+        </div>
       </div>
     </div>
   </body>

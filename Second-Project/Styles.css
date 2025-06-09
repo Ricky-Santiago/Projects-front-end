@@ -32,3 +32,60 @@
   opacity: 0.6;              /* Opacidad del subtítulo */
 }
 
+/* Estilos específicos para la página de Articles */
+.articles-content h1 {
+  color: darkslategray;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.articles-content h2 {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.articles-content p,
+.articles-content a {
+  font-size: 30px;
+  color: cadetblue;
+  text-decoration: none;
+}
+
+/* Estilos específicos para la página de Projects */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cuadro {
+  flex: 1;
+  border: 2px solid #333;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+}
+.main-content h1 {
+  color: darkslategray;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
