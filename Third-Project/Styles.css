@@ -1,0 +1,163 @@
+
+.nav-links{
+  list-style-type: none;   /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex;        /* Muestra los elementos en línea */
+  justify-content: flex-end;  /* Alinea los elementos a la derecha */
+  width: 100%;          /* Ancho del navegador */
+}
+.nav-links  {
+  background-color: black; /* Color de fondo de la barra de navegación */
+  padding: 10px 20px;      /* Espacio interno de la barra de navegación */
+  color: white;            /* Color del texto */
+}
+.nav-links .logo {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-right: auto;   /* Alinea el logo a la izquierda */  
+}
+.nav-links li {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: white;         /* Color del texto de los enlaces */
+  margin-right: 40px;   /* Espacio entre los elementos */
+  font-size: 35px;      /* Tamaño de la fuente */
+}
+.nav-links li a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: white;         /* Color del texto de los enlaces */
+}
+.centro-pagina {
+  display: flex;
+  flex-direction: column;     /* Coloca los elementos en columna (vertical) */
+  justify-content: center;    /* Centra verticalmente */
+  align-items: center;        /* Centra horizontalmente */
+  height: 100vh;              /* Toda la altura de la pantalla */
+}
+.centro-pagina h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 100px;           /* Tamaño del título */
+  margin-bottom: 0px;       /* Espacio debajo del título */
+}
+.centro-pagina h2 {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  opacity: 0.6;              /* Opacidad del subtítulo */
+}
+
+/* Estilos específicos para la página de Articles */
+.contact-content h1 {
+  color: darkslategray;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-content h2 {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.contact-content p,
+.contact-content a {
+  font-size: 30px;
+  color: cadetblue;
+  text-decoration: none;
+}
+
+/* Estilos específicos para la página de Projects */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+}
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cuadro {
+  flex: 1;
+  border: 2px solid #333;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+}
+.main-content h1 {
+  color: darkslategray;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+/* ...existing code... */
+
+/* Mejora visual para la sección de contacto */
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+  background: #f6fafd;
+}
+
+.contact-content > div {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+  min-width: 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content h1 {
+  color: darkslategray;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-content h2 {
+  color: #222;
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.contact-content p,
+.contact-content a {
+  font-size: 18px;
+  color: cadetblue;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.contact-content a:hover {
+  color: #176d81;
+  text-decoration: underline;
+}
+
+/* ...existing code... */
