@@ -95,6 +95,9 @@
   text-align: center;
 }
 .main-content h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 100px; 
   color: darkslategray;
   font-size: 50px;
   text-align: center;
