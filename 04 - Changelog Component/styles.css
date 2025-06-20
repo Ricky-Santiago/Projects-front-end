@@ -1,5 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.changelog-component {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.subtitlulo {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: darkgray;
+}
+.timeline-container {
+  position: relative;
+  width: 100px;
+  height: 500px; /* Ajusta la altura según necesites */
+  margin: 0 auto; /* Centrar horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 3px; /* Grosor de la línea */
+  height: 100%;
+  background: #222; /* Color de la línea */
+  border-radius: 2px;
+}
+.timeline-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 3px solid #222;
+  border-radius: 50%;
+  z-index: 1;
 }
