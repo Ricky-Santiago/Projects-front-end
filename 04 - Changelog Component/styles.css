@@ -13,7 +13,7 @@
 .timeline-container {
   position: relative;
   width: 100px;
-  height: 500px; /* Ajusta la altura según necesites */
+  height: 700px; /* Ajusta la altura según necesites */
   margin: 0 auto; /* Centrar horizontalmente */
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@
 }
 .timeline-line {
   position: absolute;
-  left: 50%;
+  left: 0%;
   top: 0;
   transform: translateX(-50%);
   width: 3px; /* Grosor de la línea */
@@ -31,12 +31,22 @@
 }
 .timeline-circle {
   position: absolute;
-  left: 50%;
+  left: 0%;
   transform: translateX(-50%);
   width: 24px;
   height: 24px;
-  background: #fff;
+  background: black;
   border: 3px solid #222;
   border-radius: 50%;
   z-index: 1;
+}
+.footer {
+  text-align: center;
+  border: 2px solid #222;
+  background-color: black;
+  border-radius: 12px;
+  padding: 16px 24px;
+  width: fit-content;
+  margin: 24px auto;
+  color: white;
 }
