@@ -1,45 +1,87 @@
+body {
+  background: #fafafa;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .changelog-component {
+  width: 600px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 10px #0002;
+  padding: 32px 0 32px 0;
   text-align: center;
-  font-size: 50px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
 }
+
+.changelog-component h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .subtitlulo {
-  font-size: 30px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  color: darkgray;
+  font-size: 1.1rem;
+  color: #aaa;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
 }
+
 .timeline-container {
   position: relative;
-  width: 100px;
-  height: 700px; /* Ajusta la altura según necesites */
-  margin: 0 auto; /* Centrar horizontalmente */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0 0 32px 0;
 }
+
 .timeline-line {
   position: absolute;
-  left: 0%;
+  left: 180px;
   top: 0;
-  transform: translateX(-50%);
-  width: 3px; /* Grosor de la línea */
+  width: 3px;
   height: 100%;
-  background: #222; /* Color de la línea */
+  background: #222;
   border-radius: 2px;
-}
-.timeline-circle {
-  position: absolute;
-  left: 0%;
-  transform: translateX(-50%);
-  width: 24px;
-  height: 24px;
-  background: black;
-  border: 3px solid #222;
-  border-radius: 50%;
   z-index: 1;
 }
+
+.timeline-event {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-date {
+  flex: 0 0 150px;
+  text-align: right;
+  color: #888;
+  font-size: 1rem;
+  padding-right: 24px;
+  margin-right: -16px; /* mueve solo la fecha a la izquierda */
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 180px; /* Igual que la línea */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  background: #222;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.timeline-content {
+  flex: 1;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  margin-left: 50px; /* mueve el contenido a la derecha */
+}
+
 .footer {
   text-align: center;
   border: 2px solid #222;
@@ -47,6 +89,7 @@
   border-radius: 12px;
   padding: 16px 24px;
   width: fit-content;
-  margin: 24px auto;
+  margin: 32px auto;
   color: white;
+  font-size: 1rem;
 }
