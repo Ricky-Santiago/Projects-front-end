@@ -49,3 +49,36 @@
 .subtitle {
     color: #888; /* Color gris */
 }
+.three-images {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.small-circle-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd; /* Borde opcional */
+}
+.kurama-section p,
+.kurama-section h2 {
+    text-align: center;
+}
+.stars {
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.cards-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 0;
+}
