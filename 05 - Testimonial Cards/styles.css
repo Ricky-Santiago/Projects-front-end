@@ -1,79 +1,23 @@
+/* ===== RESET Y BASE ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.Background-Black {
-    background-color: black;     /* Fondo negro */
-    color: white;                /* Texto blanco */
-    padding: 20px;               /* Espaciado interno */
-    border-radius: 8px;          /* Bordes redondeados (opcional) */
-    margin: 16px 0;              /* Margen arriba y abajo (opcional) */
-}
-.Background-white {
-    background-color: white;     /* Fondo blanco */
-    border: 2px solid black;     /* Borde negro de 2px */
-    color: black;                /* Texto negro */
-    padding: 20px;               /* Espaciado interno */
-    border-radius: 8px;          /* Bordes redondeados (opcional) */
-    margin: 16px 0;              /* Margen arriba y abajo (opcional) */
-}
-.profile-info {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-top: 16px;
+
+body {
+    background-color: #f5f5f5;
+    min-height: 100vh;
 }
 
-.profile-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; /* Para imagen circular */
-    object-fit: cover;
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.profile-text h2 {
-    margin: 0 0 4px 0;
-}
-
-.profile-text p {
-    margin: 0;
-}
-.profile-image-large {
-    width: 300px;          /* Más grande */
-    height: 360px;         /* Rectangular */
-    border-radius: 16px;   /* Bordes redondeados */
-    object-fit: cover;
-}
-.subtitle {
-    color: #888; /* Color gris */
-}
-.three-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin: 20px 0;
-    position: relative; /* Importante para el posicionamiento absoluto */
-}
-
-.small-circle-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ddd; /* Borde opcional */
-}
-.kurama-section p,
-.kurama-section h2 {
-    text-align: center;
-}
-.stars {
-    color: gold;
-    font-size: 20px;
-    margin-bottom: 8px;
-}
+/* ===== LAYOUT COMPONENTS ===== */
 .cards-container {
     display: flex;
     gap: 20px;
@@ -84,21 +28,38 @@
     flex: 1;
     min-width: 0;
 }
-main {
-    max-width: 800px;        /* Ancho máximo del contenido */
-    margin: 0 auto;           /* Centra horizontalmente */
-    padding: 20px;            /* Espaciado interno */
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
 }
 
-body {
-    background-color: #f5f5f5; /* Color de fondo opcional */
-    min-height: 100vh;        /* Altura mínima de la ventana */
+/* ===== CARD STYLES ===== */
+.testimonial-text {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 16px 0;
 }
-.Background-Black.with-arrow {
+
+.card-white {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+/* ===== ARROW EFFECT ===== */
+.with-arrow {
     position: relative;
 }
 
-.Background-Black.with-arrow::after {
+.with-arrow::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -109,48 +70,102 @@ body {
     border-right: 10px solid transparent;
     border-top: 10px solid black;
 }
-.Background-Black.minato-card {
-    padding: 30px;           /* Espaciado interno ajustado */
-    font-size: 1.2rem;       /* Texto más grande */
-    height: 360px;           /* Solo misma altura que la imagen */
-    border-radius: 15px;     /* Bordes redondeados */
-    box-sizing: border-box;  /* Incluye padding en las dimensiones */
-    margin: 0;               /* Sin margen extra */
+
+/* ===== PROFILE COMPONENTS ===== */
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-/* Para hacer las estrellas más grandes también */
-.Background-Black.minato-card .stars {
-    font-size: 30px;         /* Estrellas más grandes */
+.profile-image-large {
+    width: 300px;
+    height: 360px;
+    border-radius: 16px;
+    object-fit: cover;
 }
 
-/* Para hacer el título más grande */
-.Background-Black.minato-card h2 {
-    font-size: 2.1rem;       /* Título más grande */
+.profile-text h2 {
+    margin: 0 0 4px 0;
+}
+
+.profile-text p {
+    margin: 0;
+}
+
+.subtitle {
+    color: #888;
+}
+
+/* ===== MINATO SPECIAL CARD ===== */
+.minato-card {
+    padding: 30px;
+    font-size: 1.2rem;
+    height: 360px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.minato-card .stars {
+    font-size: 30px;
+    color: gold;
     margin-bottom: 8px;
 }
 
-/* Para hacer el subtítulo más grande */
-.Background-Black.minato-card .subtitle {
-    font-size: 1.8rem;       /* Subtítulo más grande */
+.minato-card h2 {
+    font-size: 2.1rem;
+    margin-bottom: 8px;
 }
+
+.minato-card .subtitle {
+    font-size: 1.8rem;
+}
+
+/* ===== KURAMA SECTION ===== */
+.kurama-section p,
+.kurama-section h2 {
+    text-align: center;
+}
+
 .kurama-title {
-    font-size: 1rem;         /* Título de Kurama más grande */
+    font-size: 1rem;
     margin-top: 16px;
 }
-.three-images img:first-child,
-.three-images img:last-child {
+
+/* ===== IMAGE CAROUSEL ===== */
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.carousel-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.carousel-image:first-child,
+.carousel-image:last-child {
     opacity: 0.5;
     width: 50px;
     height: 50px;
-    align-self: center;       /* Centra estas imágenes individualmente */
 }
+
+/* ===== NAVIGATION ARROWS ===== */
 .navigation-arrows {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    width: 300px;            /* Reducido de 100% a 180px */
-    left: 50%;               /* Centra el contenedor */
-    transform: translateX(-50%) translateY(-50%); /* Centra horizontal y verticalmente */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
     display: flex;
     justify-content: space-between;
     pointer-events: none;
@@ -165,7 +180,7 @@ body {
     padding: 5px 10px;
     border-radius: 50%;
     transition: color 0.3s ease;
-    pointer-events: auto; /* Permite hacer clic en las flechas */
+    pointer-events: auto;
 }
 
 .arrow-btn:hover {
