@@ -41,8 +41,8 @@
     margin: 0;
 }
 .profile-image-large {
-    width: 100px;          /* Más grande */
-    height: 120px;         /* Rectangular */
+    width: 300px;          /* Más grande */
+    height: 360px;         /* Rectangular */
     border-radius: 16px;   /* Bordes redondeados */
     object-fit: cover;
 }
@@ -52,8 +52,10 @@
 .three-images {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
-    margin-top: 20px;
+    margin: 20px 0;
+    position: relative; /* Importante para el posicionamiento absoluto */
 }
 
 .small-circle-image {
@@ -81,4 +83,92 @@
 .card {
     flex: 1;
     min-width: 0;
+}
+main {
+    max-width: 800px;        /* Ancho máximo del contenido */
+    margin: 0 auto;           /* Centra horizontalmente */
+    padding: 20px;            /* Espaciado interno */
+}
+
+body {
+    background-color: #f5f5f5; /* Color de fondo opcional */
+    min-height: 100vh;        /* Altura mínima de la ventana */
+}
+.Background-Black.with-arrow {
+    position: relative;
+}
+
+.Background-Black.with-arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+}
+.Background-Black.minato-card {
+    padding: 30px;           /* Espaciado interno ajustado */
+    font-size: 1.2rem;       /* Texto más grande */
+    height: 360px;           /* Solo misma altura que la imagen */
+    border-radius: 15px;     /* Bordes redondeados */
+    box-sizing: border-box;  /* Incluye padding en las dimensiones */
+    margin: 0;               /* Sin margen extra */
+}
+
+/* Para hacer las estrellas más grandes también */
+.Background-Black.minato-card .stars {
+    font-size: 30px;         /* Estrellas más grandes */
+}
+
+/* Para hacer el título más grande */
+.Background-Black.minato-card h2 {
+    font-size: 2.1rem;       /* Título más grande */
+    margin-bottom: 8px;
+}
+
+/* Para hacer el subtítulo más grande */
+.Background-Black.minato-card .subtitle {
+    font-size: 1.8rem;       /* Subtítulo más grande */
+}
+.kurama-title {
+    font-size: 1rem;         /* Título de Kurama más grande */
+    margin-top: 16px;
+}
+.three-images img:first-child,
+.three-images img:last-child {
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    align-self: center;       /* Centra estas imágenes individualmente */
+}
+.navigation-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;            /* Reducido de 100% a 180px */
+    left: 50%;               /* Centra el contenedor */
+    transform: translateX(-50%) translateY(-50%); /* Centra horizontal y verticalmente */
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: color 0.3s ease;
+    pointer-events: auto; /* Permite hacer clic en las flechas */
+}
+
+.arrow-btn:hover {
+    color: #333;
+    background-color: #f0f0f0;
 }
