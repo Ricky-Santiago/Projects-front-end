@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Background-Black {
+    background-color: black;     /* Fondo negro */
+    color: white;                /* Texto blanco */
+    padding: 20px;               /* Espaciado interno */
+    border-radius: 8px;          /* Bordes redondeados (opcional) */
+    margin: 16px 0;              /* Margen arriba y abajo (opcional) */
+}
+.Background-white {
+    background-color: white;     /* Fondo blanco */
+    border: 2px solid black;     /* Borde negro de 2px */
+    color: black;                /* Texto negro */
+    padding: 20px;               /* Espaciado interno */
+    border-radius: 8px;          /* Bordes redondeados (opcional) */
+    margin: 16px 0;              /* Margen arriba y abajo (opcional) */
+}
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Para imagen circular */
+    object-fit: cover;
+}
+
+.profile-text h2 {
+    margin: 0 0 4px 0;
+}
+
+.profile-text p {
+    margin: 0;
+}
+.profile-image-large {
+    width: 100px;          /* Más grande */
+    height: 120px;         /* Rectangular */
+    border-radius: 16px;   /* Bordes redondeados */
+    object-fit: cover;
+}
+.subtitle {
+    color: #888; /* Color gris */
+}
