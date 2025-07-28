@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -10,6 +11,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Bungee Hairline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .datepicker {
@@ -137,4 +141,9 @@ body {
     height: 1px;
     background: #ddd;
     margin: 12px auto;
+}
+.date-input::placeholder {
+    font-family: "Bungee Hairline", sans-serif;
+    font-size: 20px; /* opcional, para igualar el input */
+    color: #aaa;     /* opcional, para el color del placeholder */
 }
