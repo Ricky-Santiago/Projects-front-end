@@ -2,7 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+}
+
+body {
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .datepicker {
@@ -10,20 +17,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px #0006; /* ← sombra oscura y más profunda */
+    background: #fff;
+    width: 360px;
+    margin: 0;
+    padding: 24px 0 24px 0;
 }
+
 .datepicker-container {
-    border: 2px solid black;
     display: flex;
-    align-items: center;  /* Alinea verticalmente */
-    gap: 4px;             /* Espacio entre el input y el botón */
+    align-items: center;
+    gap: 4px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    background: #fff;
 }
+
 .date-input {
     padding: 8px;
     font-size: 20px;
-    flex: 1;  
-    border: none;            /* Hace que el input crezca y el botón se mantenga pequeño */
+    flex: 1;
+    border: none;
+    outline: none;
 }
+
 .icon-button {
     display: flex;
     justify-content: center;
@@ -35,21 +56,17 @@
     background-color: transparent;
     cursor: pointer;
 }
+
 .icon-button img {
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
 }
-.datepicker-container,
+
 .calendar {
-    width: 300px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
-}
-
-.calendar {
-    margin-top: 8px;
-    /* Elimina display: flex y justify-content aquí */
+    padding: 16px 0 16px 0;
 }
 
 .calendar-header {
@@ -57,28 +74,67 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 8px;
 }
-.calendar {
-    margin-top: 8px;
-    /* Elimina display: flex y justify-content aquí */
-}
-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-.calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
+
 .month-label {
     flex: 2;
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
+
 .prev-button,
 .next-button {
+    font-weight: 900;
     width: 32px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar-body {
+    padding: 0;
+}
+
+.day-labels,
+.day-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+.day-labels span,
+.day-grid span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.day-labels span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.day-grid span {
+    background: #f5f5f5;
+    border: none;
+}
+.day-grid span:hover {
+    background: #e0e0e0;
+    cursor: pointer;
+}
+.separator {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    margin: 12px auto;
 }
