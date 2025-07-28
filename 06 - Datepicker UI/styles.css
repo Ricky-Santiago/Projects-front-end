@@ -2,23 +2,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 .datepicker {
     display: flex;
-    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
 .datepicker-container {
-    border: 2px solid #ccc;
+    border: 2px solid black;
     display: flex;
     align-items: center;  /* Alinea verticalmente */
     gap: 4px;             /* Espacio entre el input y el botón */
 }
 .date-input {
     padding: 8px;
-    font-size: 14px;
+    font-size: 20px;
     flex: 1;  
     border: none;            /* Hace que el input crezca y el botón se mantenga pequeño */
 }
@@ -36,4 +38,47 @@
 .icon-button img {
     width: 14px;
     height: 14px;
+}
+.datepicker-container,
+.calendar {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+.calendar {
+    margin-top: 8px;
+    /* Elimina display: flex y justify-content aquí */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.calendar {
+    margin-top: 8px;
+    /* Elimina display: flex y justify-content aquí */
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.month-label {
+    flex: 2;
+    text-align: center;
+    font-size: 20px;
+}
+.prev-button,
+.next-button {
+    width: 32px;
 }
