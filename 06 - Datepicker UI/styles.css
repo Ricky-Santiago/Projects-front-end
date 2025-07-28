@@ -3,3 +3,37 @@
     margin: 0;
     padding: 0;
 }
+
+.datepicker {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 100vh;
+}
+.datepicker-container {
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;  /* Alinea verticalmente */
+    gap: 4px;             /* Espacio entre el input y el botón */
+}
+.date-input {
+    padding: 8px;
+    font-size: 14px;
+    flex: 1;  
+    border: none;            /* Hace que el input crezca y el botón se mantenga pequeño */
+}
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon-button img {
+    width: 14px;
+    height: 14px;
+}
