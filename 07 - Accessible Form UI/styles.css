@@ -1,0 +1,181 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.form-container {
+  display: flex;
+  gap: 20px;
+  border: #000;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(47, 48, 51);
+  box-shadow: 0 0 30px 0px #ffffff65; /* Pequeña sombra blanca */
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+input {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 100%;
+  background-color: dimgrey;
+  height: 30px;         /* Mismo alto para todos */
+  font-size: 1rem;    /* Mismo tamaño de texto */
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: 0 12px;      /* Espaciado interno uniforme */
+}
+
+.input-icon input {
+  padding-right: 36px;  /* Espacio para el icono */
+}
+input::placeholder {
+  color: #b3b1b1; /* Elige el color que prefieras */
+  opacity: 1;  /* Para que no sea transparente */
+}
+.form-main {
+  flex: 1;
+}
+.form-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+button {
+  display: block;
+  margin: 0 auto; /* Esto lo centra en su contenedor */
+  cursor: pointer;
+  background-color: #000;
+  color: aliceblue;
+  border-radius: 5px;
+}
+.btn {
+  width: 80%;
+  border: none; /* Sin borde blanco */
+  border-radius: 8px;
+  background-color: #000;
+  color: aliceblue;
+  box-shadow: 0 2px 6px 0px #222; /* Pequeña sombra negra */
+  padding: 8px 0;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.input-icon {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon input {
+  width: 100%;
+  padding-right: 36px; /* Menos espacio para acercar el icono */
+  box-sizing: border-box;
+}
+
+.toggle-pass {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(230, 230, 230);
+  font-size: 1.3rem;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+  border-color: #00fff7; /* Solo cambia el color */
+  box-shadow: 0 0 10px 2px #00fff775;
+  background-color: dimgrey;
+}
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-circle {
+  position: relative;
+  width: 140px;      /* Más grande */
+  height: 140px;     /* Más grande */
+  border-radius: 50%;
+  background: conic-gradient(
+    #00fff7 0% 65%,
+    #888 65% 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  top: 10px;         /* Menor espacio para borde más delgado */
+  left: 10px;
+  width: 120px;      /* Más grande pero menos que el círculo */
+  height: 120px;
+  border-radius: 50%;
+  background: rgb(47, 48, 51);
+  z-index: 1;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00fff7;
+  font-size: 2.2rem; /* Más grande */
+  font-weight: bold;
+  z-index: 2;
+}
+.progress-label {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 4px;
+}
+.form-footer {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-color: #000;
+  background-color: #88888860;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0px #74737393; /* Sombra gris */
+  padding-left: 10px; /* Solo espacio a la derecha */
+}
+li {
+  list-style: none;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+.form-footer ul {
+  padding-left: 0;
+  text-align: left;
+}
+.form-footer li:not(.incomplete) {
+  text-decoration: line-through;
+  color: #8b8b8b;
+}
+.form-footer li.incomplete {
+  text-decoration: none;
+}
+.incomplete {
+  color: #ffffff;
+}

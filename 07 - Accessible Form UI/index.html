@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+
 <body>
-    <div class="form-container"></div>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="write your name">
-            </div>
-            <div class="form-group"></div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="demo@example.com">
-            </div>
-            <div class="form-group pass-container"></div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" >
-            </div>
-            <div class="form-group pass-container"></div>
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" >
-            </div>
-            <div class="form-group">
-                <button type="submit">Update Profile</button>
-            </div>
-
-            <div class="progress-container">
-                <div class="progress-bar" >
-                    <div class="progress"></div>
+    <div class="form-container">
+        <div class="form-main">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="write your name">
                 </div>
-                <span class="progress-porcentage">65%</span>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="demo@example.com">
+                </div>
+                <div class="form-group pass-container">
+                    <label for="password">Password</label>
+                    <div class="input-icon">
+                        <input type="password" id="password" name="password">
+                        <button type="button" class="toggle-pass">
+                            <i class="bi bi-eye-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group pass-container">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="input-icon">
+                        <input type="password" id="confirm-password" name="confirm-password">
+                        <button type="button" class="toggle-pass">
+                            <i class="bi bi-eye-slash-fill"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn" type="submit">Update Profile</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-side">
+            <div class="progress-container">
+                <div class="progress-circle">
+                    <span class="progress-text">65%</span>
+                </div>
+                <span class="progress-label">Profile Completeness</span>
             </div>
-
-            <div class="form-footer"></div>
-                <div class="checklist">
+            <div class="form-footer">
+                <ul class="checklist">
                     <li>Create Account</li>
                     <li>Update Roadmap Progress</li>
                     <li>Setup Public Profile</li>
                     <li class="incomplete">Complete Your First Project</li>
                     <li class="incomplete">Create a Profile Picture</li>
-                </div>
+                </ul>
             </div>
-        </form>
+        </div>
     </div>
 </body>
+
 </html>
